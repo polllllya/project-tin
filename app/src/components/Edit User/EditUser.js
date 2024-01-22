@@ -1,8 +1,8 @@
 import React, { useState } from "react";
-import axios from "axios"; // Make sure to import your stylesheet
-import './AddUser.css';
+import axios from "axios";
+import './EditRecipe.css';
 
-const AddUser = ({ recipeId, onClose, onEdit }) => {
+const AddRecipe = ({ recipeId, onClose, onEdit }) => {
     const [updatedRecipe, setUpdatedRecipe] = useState({});
 
     const handleInputChange = (e) => {
@@ -17,7 +17,7 @@ const AddUser = ({ recipeId, onClose, onEdit }) => {
         try {
             // Send a request to update the recipe
             await axios.put(
-                `http://localhost:3001/`, //ToDo
+                `http://localhost:3001//edit-user/`, //ToDo
                 updatedRecipe
             );
 
@@ -32,7 +32,7 @@ const AddUser = ({ recipeId, onClose, onEdit }) => {
     };
 
     return (
-        <div className="addUser">
+        <div className="editUser">
             <header>
                 <div className="logo">KetoRecipes</div>
                 <nav className="navigation">
@@ -46,23 +46,23 @@ const AddUser = ({ recipeId, onClose, onEdit }) => {
                 <a className="login" href="#" id="login-link">Log In</a>
             </header>
             <main>
-                <h1>Add a new User</h1>
+                <h1>Edit User</h1>
                 <div className="form">
                     <div className="one-form">
                         <p>First Name</p>
-                        <input />
+                        <input value="Palina" />
                     </div>
                     <div className="one-form">
                         <p>Last Name</p>
-                        <input />
+                        <input value="Brahina" />
                     </div>
                     <div className="one-form">
                         <p>Email</p>
-                        <input />
+                        <input value="palina.b@gmail.com" />
                     </div>
                     <div className="one-form">
                         <p>Password</p>
-                        <input />
+                        <input value="12345678" />
                     </div>
                     <div className="one-form add-img">
                         <p>Image</p>
@@ -75,4 +75,4 @@ const AddUser = ({ recipeId, onClose, onEdit }) => {
     );
 };
 
-export default AddUser;
+export default EditUser;

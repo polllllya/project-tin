@@ -1,0 +1,108 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap");
+
+.editUser * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+}
+
+.editUser li,
+.editUser a {
+    font-weight: 500;
+    text-decoration: none;
+}
+
+.editUser .login {
+    margin-left: 60px;
+}
+
+.editUser header {
+    font-size: 16px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 30px 14%;
+}
+
+.editUser .logo {
+    font-weight: bold;
+    font-size: 25px;
+    color: #f17f67;
+}
+
+.editUser .nav-links {
+    list-style: none;
+}
+
+.editUser .nav-links li {
+    display: inline-block;
+    padding: 0px 40px;
+}
+
+.editUser main {
+    margin-top: 40px;
+    margin-left: auto;
+    margin-right: auto;
+    width: 1400px;
+    height: 200px;
+}
+
+.editUser h1,
+.editUser h2,
+.editUser h3,
+.editUser p,
+.editUser li,
+.editUser a {
+    color: #5b5956;
+}
+
+.editUser h1 {
+    font-size: 50px;
+    font-weight: bold;
+    margin-bottom: 40px;
+}
+
+.editUser .one-form {
+    display: flex;
+    height: 70px;
+}
+
+.editUser .one-form p {
+    width: 20%;
+    font-size: 20px;
+}
+
+.editUser input {
+    font-size: 20px;
+    padding-left: 17px;
+    border: 2px solid #f17f67;
+    background-color: #f8f8f8;
+    border-radius: 20px;
+    height: 50px;
+    width: 400px;
+}
+
+.editUser .ta {
+    height: 220px;
+}
+
+.editUser .add-img [type="file"] {
+    border: none;
+    background-color: white;
+}
+
+.editUser button {
+    padding: 15px 32px;
+    border-radius: 40px;
+    border: none;
+    background-color: #f17f67;
+    color: #ffffff;
+    font-size: 16px;
+    cursor: pointer;
+    height: 52px;
+    width: 150px;
+    margin-left: 280px;
+    margin-top: 30px;
+    margin-bottom: 30px;
+}

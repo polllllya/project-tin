@@ -6,7 +6,7 @@ import RegisterForm from "./components/RegisterForm";
 import RecipeList from "./components/RecipeList";
 import RecipeInfo from "./components/Recipe Info/RecipeInfo";
 import LoginForm from "./components/LoginForm";
-import EditUser from "./components/EditUser";
+import EditUser from "./components/Edit User/EditUser";
 import EditRecipe from "./components/Edit Recipe/EditRecipe";
 import AddUser from "./components/Add User/AddUser";
 import AddRecipe from "./components/Add Recipe/AddRecipe";
@@ -22,7 +22,7 @@ function App() {
           <Route path="/recipes" element={RecipeList} />
           <Route path="/recipes/:recipeId" element={<RecipeInfo />} />
           <Route path="/login" element={LoginForm} />
-          <Route path="/edit-user/:userId" element={EditUser} />
+          <Route path="/edit-user/:userId" element={<EditUser />} />
           <Route path="/edit-recipe/:recipeId" element={<EditRecipe />} />
           <Route path="/add-user" element={<AddUser />} />
           <Route path="/add-recipe" element={<AddRecipe/>} />
