@@ -9,7 +9,7 @@ import LoginForm from "./components/LoginForm";
 import EditUser from "./components/EditUser";
 import EditRecipe from "./components/Edit Recipe/EditRecipe";
 import AddUser from "./components/AddUser";
-import AddRecipe from "./components/AddRecipe";
+import AddRecipe from "./components/Add Recipe/AddRecipe";
 
 function App() {
   return (
@@ -25,7 +25,7 @@ function App() {
           <Route path="/edit-user/:userId" element={EditUser} />
           <Route path="/edit-recipe/:recipeId" element={<EditRecipe />} />
           <Route path="/add-user" element={AddUser} />
-          <Route path="/add-recipe" element={AddRecipe} />
+          <Route path="/add-recipe" element={<AddRecipe/>} />
         </Routes>
       </div>
     </Router>
