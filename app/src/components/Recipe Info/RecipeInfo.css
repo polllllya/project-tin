@@ -53,7 +53,7 @@ main {
   height: 200px;
 }
 
-.main-img {
+div > .main-img {
   display: block;
   margin-left: auto;
   margin-right: auto;

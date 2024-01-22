@@ -12,7 +12,7 @@ const RecipeInfo = () => {
   useEffect(() => {
     // Pobiera informacje o konkretnym przepisie przy użyciu nowej ścieżki
     axios
-      .get(`http://localhost:3001/recipes/${recipeId}`)
+      .get(`http://192.168.0.31:3001/recipes/${recipeId}`)
       .then((response) => {
         setRecipe(response.data);
       })
@@ -21,7 +21,7 @@ const RecipeInfo = () => {
       });
 
     axios
-      .get(`http://localhost:3001/recipes/${recipeId}/reviews`)
+      .get(`http://192.168.0.31:3001/recipes/${recipeId}/reviews`)
       .then((response) => {
         setReviews(response.data);
       })
