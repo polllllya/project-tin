@@ -83,7 +83,13 @@ const RecipeInfo = () => {
           <div className="last-m">
             <h3>Do You want to make changes to this recipe?</h3>
           </div>
-          <Link to={`/edit-recipe/${recipeId}`} className="ed-button e">
+          <Link
+            to={{
+              pathname: `/edit-recipe/${recipeId}`,
+              state: { initialRecipeData: recipe },
+            }}
+            className="ed-button e"
+          >
             Edit
           </Link>
           <button className="ed-button d">Delete</button>
